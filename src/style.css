@@ -1,0 +1,261 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+
+/* Screen Management */ 
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Screen 1: Welcome Screen */
+.button-container {
+    position: absolute;
+    bottom: 10px; 
+    left: 70%;
+    transform: none;
+}
+
+.next-button {
+    background-color: white;
+    border: 2px solid #333;
+    padding: 4px 8px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 2px;
+}
+
+.next-button:hover {
+    background-color: #9EC9EF;
+}
+
+/* Screen 2: Timer Selection */
+.timer-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 10px;
+    padding: 80px 30px 60px 30px; 
+    align-items: center;
+    justify-items: center;
+}
+
+.timer-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.886));
+     
+}
+
+.timer-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.timer-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+.timer-icon:nth-child(1) {
+    /* Fox icon - top left */
+    transform: translateX(-5px) translateY(-25px);
+    width: 153px;  
+    height: 153px
+}
+
+.timer-icon:nth-child(2) {
+    /* Crown icon - top right */
+    transform: translateX(-11px) translateY(-25px);
+    width: 125px;  
+    height: 125px
+}
+
+.timer-icon:nth-child(3) {
+    /* Rose icon - bottom left */
+    transform: translateX(-15px) translateY(-35px);
+    width: 150px;  
+    height: 150px
+}
+
+.timer-icon:nth-child(4) {
+    /* Paper plane icon - bottom right */
+    transform: translateX(-25px) translateY(-40px);
+    width: 169px;  
+    height: 169px;
+}
+/* Screen 3: Timer Screen */
+.comet-gif {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    width: 250px;
+    height: 200px;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 10px rgba(47, 129, 245, 0.723)); 
+    z-index: 2;
+}
+
+.timer-display {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#timerCountdown {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 110px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}
+
+.timer-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.control-button {
+    background-color: white;
+    border: 2px solid #333;
+    padding: 4px 8px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 2px;
+}
+
+.control-button:hover {
+    background-color: #9EC9EF;
+}
+button:focus {
+    outline: none;
+}
+
+/* Screen 4: Completion Screen */
+.thought-star {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 430px;
+    animation: float 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+/* Floating animation for thought star */
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+
+.quote-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+}
+
+#randomQuote {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    line-height: 1.4;
+}
+
+.end-button-container {
+    position: absolute;
+    bottom: 10px; 
+    left: 75%;
+    transform: none;
+    z-index: 10;
+    
+}
+
+.end-button {
+    background-color: white;
+    border: 2px solid #333;
+    padding: 4px 8px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 2px;
+    z-index: 11;  
+    position: relative;  
+}
+
+.end-button:hover {
+    background-color: #9EC9EF;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive adjustments for different screen densities */
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .background-image {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}

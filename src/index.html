@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Universe Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Audio - plays continuously -->
+    <audio id="backgroundLoop" loop>
+        <source src="../assets/sounds/background loop.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Sound Effects -->
+    <audio id="clickSound">
+        <source src="../assets/sounds/click sound.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="timerCompleted">
+        <source src="../assets/sounds/time completed sound.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="chimesSound">
+        <source src="../assets/sounds/chimes sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Screen 1: Welcome Screen -->
+    <div id="screen1" class="screen active">
+        <img src="../assets/images/Screen 1.png" alt="Welcome Screen" class="background-image">
+        <div class="button-container">
+            <button id="nextPageBtn" class="next-button">NEXT PAGE</button>
+        </div>
+    </div>
+
+    <!-- Screen 2: Timer Selection -->
+    <div id="screen2" class="screen">
+        <img src="../assets/images/Screen 2.png" alt="Timer Selection" class="background-image">
+        <div class="timer-icons">
+            <!-- Fox - 5 mins -->
+            <div class="timer-icon" data-minutes="5">
+                <img src="../assets/images/fox icon.png" alt="Fox Timer - 5 minutes">
+            </div>
+            <!-- Crown - 15 mins -->
+            <div class="timer-icon" data-minutes="15">
+                <img src="../assets/images/crown icon.png" alt="Crown Timer - 15 minutes">
+            </div>
+            <!-- Rose - 25 mins -->
+            <div class="timer-icon" data-minutes="25">
+                <img src="../assets/images/rose icon.png" alt="Rose Timer - 25 minutes">
+            </div>
+            <!-- Paper Plane - 30 mins -->
+            <div class="timer-icon" data-minutes="30">
+                <img src="../assets/images/paperplane icon.png" alt="Paper Plane Timer - 30 minutes">
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 3: Timer Screen -->
+    <div id="screen3" class="screen">
+        <img src="../assets/images/Screen 3.png" alt="Timer Screen" class="background-image">
+        <!-- Comet GIF in corner -->
+        <img src="../assets/images/comet.gif" alt="Comet" class="comet-gif">
+        
+        <div class="timer-display">
+            <div id="timerCountdown">25:00</div>
+        </div>
+        
+        <div class="timer-controls">
+            <button id="stopBtn" class="control-button">PAUSE</button>
+            <button id="restartBtn" class="control-button">RESTART</button>
+        </div>
+    </div>
+
+    <!-- Screen 4: Completion Screen -->
+    <div id="screen4" class="screen">
+        <img src="../assets/images/Screen 4.png" alt="Completion Screen" class="background-image">
+        
+        <!-- Floating Thought Star -->
+        <img src="../assets/images/thought star.png" alt="Thought Star" class="thought-star">
+        
+        <!-- Random Quote Display -->
+        <div class="quote-container">
+            <p id="randomQuote">Rest is also a kind of growing.</p>
+        </div>
+        
+        <div class="end-button-container">
+            <button id="endBtn" class="end-button">THE END</button>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

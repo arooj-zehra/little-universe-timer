@@ -1,0 +1,61 @@
+{
+  "name": "little-universe-timer",
+  "version": "1.0.0",
+  "description": "A peaceful timer app for meditation and focus sessions with beautiful pixel art",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --inspect",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux",
+    "pack": "electron-builder --dir",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timer",
+    "meditation",
+    "focus",
+    "productivity",
+    "pixel-art",
+    "electron"
+  ],
+  "author": "ar2wrld",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^37.2.6",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.ar2wrld.little-universe-timer",
+    "productName": "Little Universe Timer",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "src/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/images/app_icon.png"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/images/app_icon.png"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/images/app_icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
