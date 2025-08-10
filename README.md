@@ -145,7 +145,6 @@ This app draws inspiration from Antoine de Saint-Exupéry's timeless classic *Th
 - Journey and self-discovery
 - The importance of taking time to appreciate life
 
----
 ## 🎧 Project Soundtrack
 *This track was on loop while working on this project.*
 
