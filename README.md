@@ -27,7 +27,7 @@ A peaceful meditation and focus timer app inspired by *The Little Prince*, featu
 
 | Welcome Screen | Timer Selection | Active Timer | Completion |
 |---|---|---|---|
-| ![Screen 1](assets/screenshots/home.png) width="200" | ![Screen 2](assets/screenshots/selection.png) width="200" | ![Screen 3](assets/screenshots/timer.png) width="200"| ![Screen 4](assets/screenshots/completion.png) width="200" |
+| <img src="assets/screenshots/home.png" width="200"/> | <img src="assets/screenshots/selection.png" width="200"/> | <img src="assets/screenshots/timer.png" width="200"/> | <img src="assets/screenshots/completion.png" width="200"/> |
  
 
 ## Perfect For
