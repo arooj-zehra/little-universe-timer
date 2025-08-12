@@ -1,9 +1,7 @@
 # 🌟 Little Universe Timer
 
-[![License](https://img.shields.io/badge/license-ISC-blue?style=flat-square)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=flat-square)](https://github.com/arooj-zehra/little-universe-timer)
-[![Electron](https://img.shields.io/badge/Electron-37.2.6-47848F?style=flat-square&logo=electron)](https://electronjs.org/)
 
+[![Electron](https://img.shields.io/badge/Electron-37.2.6-47848F?style=flat-square&logo=electron)](https://electronjs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
