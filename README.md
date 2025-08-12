@@ -27,7 +27,7 @@ A peaceful meditation and focus timer app inspired by *The Little Prince*, featu
 
 | Welcome Screen | Timer Selection | Active Timer | Completion |
 |---|---|---|---|
-| ![Screen 1](assets/screenshots/home.png) | ![Screen 2](assets/screenshots/selection.png) | ![Screen 3](assets/screenshots/timer.png) | ![Screen 4](assets/screenshots/completion.png) |
+| ![Screen 1](assets/screenshots/home.png) width="200" | ![Screen 2](assets/screenshots/selection.png) width="200" | ![Screen 3](assets/screenshots/timer.png) width="200"| ![Screen 4](assets/screenshots/completion.png) width="200" |
  
 
 ## Perfect For
@@ -145,13 +145,13 @@ This app draws inspiration from Antoine de Saint-Exupéry's timeless classic *Th
 - Journey and self-discovery
 - The importance of taking time to appreciate life
 
+*"It is the time you have wasted for your rose that makes your rose so important."* - The Little Prince
+
 ## 🎧 Project Soundtrack
 *This track was on loop while working on this project.*
 
 **[“Aibo (feat Bratty)” – Yves](https://open.spotify.com/track/0hvGU0lbDt8SWfEx797LuJ?si=3fde2136083f473d)**
 
 Star this repository if you found it interesting! ⭐
-
-*"It is the time you have wasted for your rose that makes your rose so important."* - The Little Prince
 
 **made with ❤️ by arooj**
