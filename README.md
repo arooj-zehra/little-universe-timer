@@ -1,4 +1,4 @@
-# 🌟 Little Universe Timer
+# Little Universe Timer
 
 
 [![Electron](https://img.shields.io/badge/Electron-37.2.6-47848F?style=flat-square&logo=electron)](https://electronjs.org/)
